@@ -13,15 +13,36 @@
 </head>
 
 <body>
-    <div class="container-fluid bg-dark">
+    <!-- Mail section -->
+    <div class="container-fluid bg-dark bg-gradient mb-5">
         <div class="row">
+            <!-- title -->
             <div class="col-12 text-center text-white">
                 <h1>Email Login</h1>
             </div>
+            <!-- email input -->
             <div class="col-12 input-group mb-3">
                 <input type="email" id="email" class="form-control" placeholder="Your email"
                     aria-label="Recipient's email" aria-describedby="button-addon2">
                 <button id="login" class="btn btn-outline-secondary text-white" type="button">Log In</button>
+            </div>
+        </div>
+    </div>
+    <!-- Dice Game -->
+    <div class="container-fluid bg-info bg-gradient">
+        <div class="row gy-5">
+            <!-- title -->
+            <div class="col-12 text-center">
+                <h1>Dice Game</h1>
+            </div>
+            <!-- players -->
+            <div class="col-6 offset-3 d-flex justify-content-between">
+                <p>Player 1</p>
+                <p>CPU</p>
+            </div>
+            <!-- result -->
+            <div class="col-12 text-center">
+                <h3 id="result"></h3>
             </div>
         </div>
     </div>
