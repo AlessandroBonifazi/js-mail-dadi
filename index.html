@@ -29,7 +29,7 @@
         </div>
     </div>
     <!-- Dice Game -->
-    <div class="container-fluid bg-info bg-gradient">
+    <div class="container-fluid bg-success bg-gradient">
         <div class="row gy-5">
             <!-- title -->
             <div class="col-12 text-center">
@@ -37,12 +37,13 @@
             </div>
             <!-- players -->
             <div class="col-6 offset-3 d-flex justify-content-between">
-                <p>Player 1</p>
-                <p>CPU</p>
+                <p id="player-dice"></p>
+                <p id="cpu-dice"></p>
             </div>
             <!-- result -->
             <div class="col-12 text-center">
-                <h3 id="result"></h3>
+                <input id="play" class="btn btn-dark" type="submit" value="Play!">
+                <h3 id="result" class="mt-5"></h3>
             </div>
         </div>
     </div>

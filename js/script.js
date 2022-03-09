@@ -22,3 +22,30 @@ login.addEventListener('click', function () {
 
 
 // Dice Game
+const play = document.getElementById('play');
+
+const result = document.getElementById('result');
+
+let playerShoot = document.getElementById('player-dice');
+
+let cpuShoot = document.getElementById('cpu-dice');
+
+play.addEventListener('click', function () {
+    // game
+    let playerDice = Math.floor(Math.random() * 6) + 1;
+    let cpuDice = Math.floor(Math.random() * 6) + 1;
+    // players rolls
+    playerShoot.innerText = 'Player: ' + playerDice;
+    cpuShoot.innerText = 'CPU: ' + cpuDice;
+    // conditions
+    if (playerDice > cpuDice) {
+        console.log("You Win!");
+        result.innerText = "You Win!"
+    } else if (playerDice < cpuDice) {
+        console.log("You Loose!");
+        result.innerText = "You Loose!"
+    } else {
+        console.log("It's a Tie!");
+        result.innerText = "It's a Tie!"
+    }
+})
